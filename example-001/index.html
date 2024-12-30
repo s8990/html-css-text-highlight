@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlight Example</title>
+    <style>
+      p {
+        font-size: 24px;
+      }
+
+      .highlight::before {
+        content: "";
+        left: -2px;
+        right: -2px;
+        background: #ffa290;
+        position: absolute;
+        height: 10px;
+        z-index: -1;
+        top: 10px;
+      }
+
+      .highlight {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <p>you are the <span class="highlight">best</span> friend</p>
+  </body>
+</html>
